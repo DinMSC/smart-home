@@ -1,8 +1,10 @@
+import PageLayout from './pages/PageLayout';
+
 function App() {
   return (
-    <>
-      <div className='text-red-400'>Hello!!</div>
-    </>
+    <div>
+      <PageLayout />
+    </div>
   );
 }
 
