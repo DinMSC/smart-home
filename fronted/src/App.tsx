@@ -1,9 +1,12 @@
+import HomePage from './pages/HomePage';
 import PageLayout from './pages/PageLayout';
 
 function App() {
   return (
     <div>
-      <PageLayout />
+      <PageLayout>
+        <HomePage />
+      </PageLayout>
     </div>
   );
 }
