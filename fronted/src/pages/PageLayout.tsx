@@ -12,7 +12,9 @@ const PageLayout = ({ children }: PageLayoutProps) => {
         <PageHeader />
       </header>
 
-      <div className='h-[calc(100vh-70px)] overflow-auto'>{children}</div>
+      <div className='h-[calc(100vh-70px)] overflow-auto bg-black'>
+        {children}
+      </div>
     </div>
   );
 };
