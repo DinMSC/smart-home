@@ -42,7 +42,7 @@ const HomePage = () => {
               height: '100%',
               backgroundColor: '#FF4D00',
               clipPath: 'polygon(16% 0%, 100% 16%, 90% 60%, 0% 99%)',
-              borderRadius: '-260px',
+              borderRadius: '360px',
               position: 'absolute',
               zIndex: 1,
             }}
@@ -53,7 +53,7 @@ const HomePage = () => {
               height: '100%',
               backgroundColor: '#1B1B1B',
               clipPath: 'polygon(0% 16%, 90% 0%, 100% 99%, 16% 100%)',
-              borderRadius: '-360px',
+              borderRadius: '360px',
               position: 'absolute',
               zIndex: 2,
               display: 'flex',
@@ -80,7 +80,6 @@ const HomePage = () => {
             style={{
               width: '120px',
               height: '120px',
-
               borderRadius: '50%',
               position: 'absolute',
               zIndex: 3,
