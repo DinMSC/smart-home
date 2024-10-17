@@ -65,7 +65,7 @@ const HomePage = () => {
               <p style={{ color: 'white', fontSize: 25 }}>ELDAR DZUHO</p>
               <p style={{ color: 'white' }}>SOME RANDOM TEXT</p>
               <img
-                className='w-[36px] h-[36px] pb-4'
+                className='w-[66px] h-[66px] pb-4 pt-4'
                 src={Quotes}
                 alt='Quotes'
               />
