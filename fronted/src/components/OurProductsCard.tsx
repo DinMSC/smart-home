@@ -14,7 +14,7 @@ const OurProductsCard = ({
   reverseLayout,
 }: OurProductsCardProps) => {
   const containerClasses = reverseLayout ? 'flex-row-reverse' : 'flex-row';
-  const textClasses = reverseLayout ? 'text-right' : 'text-left';
+  const textClasses = reverseLayout ? 'text-right mr-4 ' : 'text-left ml-4';
 
   return (
     <div className={`flex items-center gap-4 ${containerClasses}`}>
@@ -22,7 +22,7 @@ const OurProductsCard = ({
         <div className='w-[432px] h-[327px]'>{svg}</div>
       </div>
       <div
-        className={`ml-4 flex flex-col max-w-[1240px] max-h-[417px] justify-center gap-4 pb-4 ${textClasses}`}
+        className={`flex flex-col max-w-[1240px] max-h-[417px] justify-center gap-4 pb-4 ${textClasses}`}
       >
         <p className='font-semibold text-2xl text-[#FF4D00]'>{header}</p>
         <p className='text-white leading-relaxed text-xl'>{text}</p>
