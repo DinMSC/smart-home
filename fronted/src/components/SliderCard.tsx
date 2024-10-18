@@ -1,10 +1,25 @@
-const SliderCard = () => {
+import { ReactNode } from 'react';
+import Quotes from '/Quotes.svg';
+
+interface SliderCardProps {
+  name: string;
+  description: string;
+  image: ReactNode;
+  position: string;
+}
+
+const SliderCard = ({
+  name,
+  description,
+  image,
+  position,
+}: SliderCardProps) => {
   return (
     <div
       style={{
         position: 'relative',
         width: '434px',
-        height: '466px',
+        height: '486px',
       }}
     >
       <div
@@ -33,33 +48,35 @@ const SliderCard = () => {
         }}
       >
         <div className='flex flex-col justify-center items-center'>
-          <p style={{ color: 'white', fontSize: 25 }}>ELDAR DZUHO</p>
-          <p style={{ color: 'white' }}>SOME RANDOM TEXT</p>
+          <p style={{ color: '#CFCFCF', fontSize: 25 }}>{name}</p>
+          <p style={{ color: '#CFCFCF' }}>{position}</p>
           <img
             className='w-[66px] h-[66px] pb-4 pt-4'
-            // src={Quotes}
+            src={Quotes}
             alt='Quotes'
           />
-          <p style={{ color: 'white', width: 310, paddingLeft: 16 }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh
-            mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget
-            nibh in turpis. Consequat duis diam lacus arcu.
+          <p style={{ color: '#CFCFCF', width: 310, paddingLeft: 16 }}>
+            {description}
           </p>
         </div>
       </div>
       <div
         style={{
-          width: '120px',
-          height: '120px',
+          width: '100px',
+          height: '100px',
           borderRadius: '50%',
           position: 'absolute',
           zIndex: 3,
-          top: '10%',
+          top: '11%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
+          overflow: 'hidden',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
         }}
       >
-        {/* <img src={Face} alt='faca' /> */}
+        {image}
       </div>
     </div>
   );
