@@ -1,3 +1,5 @@
+import Logo from '/Logo.svg';
+
 const MenuItem = ({ text }: { text: string }) => (
   <div className='cursor-pointer h-[70px] w-[70px] pt-[5px] flex flex-row justify-center items-center border-b-[5px] border-transparent hover:border-[#FF4D00] hover:text-[#FF4D00]'>
     <li>{text}</li>
@@ -7,7 +9,9 @@ const MenuItem = ({ text }: { text: string }) => (
 const PageHeader = () => {
   return (
     <div className='flex flex-row w-full gap-4 bg-black text-white font-semibold'>
-      <div className='flex flex-row items-center pl-8'>LOGO</div>
+      <div className='flex flex-row items-center pl-8'>
+        <img src={Logo} alt='logo' />{' '}
+      </div>
       <div className='h-[70px] w-full flex justify-center items-center'>
         <ul
           id='menu'

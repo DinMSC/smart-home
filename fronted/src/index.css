@@ -6,3 +6,11 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.slick-dots {
+  top: 10px; /* Adjust as needed */
+}
+
+.slick-dots li button:before {
+  color: white; /* Adjust color as needed */
+}

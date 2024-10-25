@@ -31,13 +31,13 @@ const HomePage = () => {
           />
         ))}
 
-        <div className='flex flex-row justify-center items-center pt-20'>
+        <div className='flex flex-row justify-center items-center pt-20 pb-8'>
           <p className='text-white text-3xl font-semibold'>
             What Our Clients Say About Us
           </p>
         </div>
 
-        <Slider {...settings} className='pt-8'>
+        <Slider {...settings} className='pt-8 pb-12'>
           {clients.map((client, index) => (
             <SliderCard
               key={index}
